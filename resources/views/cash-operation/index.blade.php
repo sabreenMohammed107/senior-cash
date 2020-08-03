@@ -16,7 +16,7 @@
     <div class="col-md-12">
         <div class="ms-panel">
             <div class="ms-panel-header d-flex justify-content-between">
-                <h6>Cash Box Transaction</h6>
+                <h6>Cash Loans</h6>
                 <!-- <a href="select_transation.html" class="btn btn-dark" > add new </a> -->
             </div>
             <div class="ms-panel-body">

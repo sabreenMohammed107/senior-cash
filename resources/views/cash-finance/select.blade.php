@@ -5,7 +5,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href=""><i class="material-icons"></i> {{ __(' Home') }} </a></li>
-        <li class="breadcrumb-item active" aria-current="page">Transaction Data</li>
+        <li class="breadcrumb-item active" aria-current="page">Cash Move</li>
 
     </ol>
 </nav>
@@ -19,7 +19,7 @@
 <div class="col-md-12">
   <div class="ms-panel">
     <div class="ms-panel-header d-flex justify-content-between">
-      <h6>Transaction Data</h6>
+      <h6>Cash Move</h6>
       <a href="{{ route('add-cash-finance',$Selectrow->id) }}" class="btn btn-dark" > add new </a>
     </div>
    

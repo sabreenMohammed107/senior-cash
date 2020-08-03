@@ -5,7 +5,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href=""><i class="material-icons"></i> {{ __(' Home') }} </a></li>
-        <li class="breadcrumb-item active" aria-current="page">Add-Data_box</li>
+        <li class="breadcrumb-item active" aria-current="page">Add-Cash Move</li>
 
     </ol>
 </nav>
@@ -21,7 +21,7 @@
     <div class="col-md-12">
         <div class="ms-panel">
             <div class="ms-panel-header d-flex justify-content-between">
-                <h6>Data</h6>
+                <h6>Cash Move</h6>
                 <!-- <a href="add_cource.html" class="btn btn-dark" > add Course </a> -->
             </div>
             <div class="ms-panel-body">
