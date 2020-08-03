@@ -22,7 +22,7 @@ class CashFinanceController extends Controller
 
     public function __construct(Financial_entry $object)
     {
-        // $this->middleware('auth');
+        $this->middleware('auth');
 
         $this->object = $object;
         $this->viewName = 'cash-finance.';

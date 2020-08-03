@@ -22,7 +22,7 @@ class CashOperationController extends Controller
 
     public function __construct(Financial_entry $object)
     {
-        // $this->middleware('auth');
+        $this->middleware('auth');
 
         $this->object = $object;
         $this->viewName = 'cash-operation.';
@@ -73,6 +73,7 @@ class CashOperationController extends Controller
     {
            //save in finance entry
             $objdebit = new Financial_entry();
+             $objdebit->trans_type_id = Finan_trans_type::where('id', '=', 2)->first()->id;
 
             $objdebit->entry_date = Carbon::parse($request->input('entry_date'));
             $objdebit->credit = $request->input('credit');
@@ -82,6 +83,7 @@ class CashOperationController extends Controller
         
         
             $objCredit = new Financial_entry();
+         $objCredit->trans_type_id = Finan_trans_type::where('id', '=', 2)->first()->id;
 
             $objCredit->entry_date = Carbon::parse($request->input('entry_date'));
             $objCredit->debit = $request->input('credit');

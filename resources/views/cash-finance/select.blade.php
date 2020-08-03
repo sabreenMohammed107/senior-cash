@@ -51,7 +51,7 @@
               <th>Debit</th>
               <th>Credit</th>
               <th>Transaction Data</th>
-            
+              <th>Notes </th>
               <th>Action</th>
             </tr>
           </thead>
@@ -65,8 +65,10 @@
               <td>  <?php $date = date_create($row->entry_date) ?>
                                     {{ date_format($date,'Y-m-d') }}</td>
             
+           
+              <td>{{$row->notes}}</td>
               <td>
-              @if($row->trans_type_id==1)
+              @if($row->trans_type_id==1 || $row->trans_type_id==2)
                                     <button class="btn btn-info d-inline-block" disabled>edit</button>
                                     <button class="btn d-inline-block btn-danger" disabled>delete</button>
 

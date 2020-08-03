@@ -26,7 +26,7 @@ class CashBoxController extends Controller
 
     public function __construct(Cash_box $object)
     {
-        // $this->middleware('auth');
+        $this->middleware('auth');
 
         $this->object = $object;
         $this->viewName = 'cash-box.';

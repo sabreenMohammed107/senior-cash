@@ -11,23 +11,9 @@
         </div>
   
         <ul class="ms-nav-list ms-inline mb-0" id="ms-nav-options">
-          <!-- <li class="ms-nav-item  quick-call  mt-2">
-            <a href="bulk-search.html" class="">
-              <span class="text-dark"><i class="material-icons fs-16">search</i><b>MSearch</b></span>
-            </a>
-          </li> -->
-          <!-- <li class="ms-nav-item  quick-call  mt-2">
-            <a href="Qkcall.html" class="">
-              <span class="text-dark"><i class="material-icons fs-16">call</i><b>QkCall</b></span>
-            </a>
-          </li> -->
+    
           <li class="ms-nav-item dropdown ms-search-form">
-            <!-- <form class="ms-form" method="post">
-              <div class="ms-form-group my-0 mb-0 has-icon fs-14">
-                <input type="search" class="ms-form-input" id="quickCallSearch" name="search" placeholder="Search here..." value="">
-                <!-- <button type="submit" class="search-btn"><i class="flaticon-search text-disabled"></i></button> -->
-             <!-- </div>
-            </form> -->
+        
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="mailDropdown" id="quickCall_List"> 
              
               <li class="ms-scrollable ms-dropdown-list ps">
@@ -179,23 +165,30 @@
           <li class="ms-nav-item ms-nav-user dropdown">
             <a href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img class="ms-user-img ms-img-round float-left" src="https://via.placeholder.com/270x270" alt="people">
-              <span class="float-right">User</span>
+              <span class="float-right">{{ Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">
               <li class="dropdown-menu-header">
-                <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, User</span></h6>
+                <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, {{ Auth::user()->name }}</span></h6>
               </li>
-              <li class="dropdown-divider"></li>
-              <li class="ms-dropdown-list">
+              <!-- <li class="dropdown-divider"></li> -->
+              <!-- <li class="ms-dropdown-list">
                 <a class="media fs-14 p-2" href="profile.html"> <span><i class="flaticon-user mr-2"></i> Profile</span>
                 </a>
-              </li>
+              </li> -->
               <li class="dropdown-divider"></li>
   
               <li class="dropdown-menu-footer">
-                <a class="media fs-14 p-2" href="login.html"> <span><i class="flaticon-shut-down mr-2"></i> Logout</span>
-                </a>
-              </li>
+              <a class="media fs-14 p-2" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                <span><i class="flaticon-shut-down mr-2"></i> Logout</span>
+              </a>
+
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+              </form>
+
+            </li>
             </ul>
           </li>
         </ul>
