@@ -38,9 +38,9 @@
   <span><i class="material-icons fs-16">assignment</i>Operations</span>
 </a>
 <ul id="operationdropdown" class="collapse" aria-labelledby="basic-elements" data-parent="#side-nav-accordion">
-<li> <a href="{{ route('cash-finance.index') }}">transaction</a> </li>
+<li> <a href="{{ route('cash-finance.index') }}">Cash Move</a> </li>
 
-<li> <a href="{{ route('cash-operation.index') }}">Operations</a> </li>
+<li> <a href="{{ route('cash-operation.index') }}">Cash Loans</a> </li>
 
 </ul>
 
