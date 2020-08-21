@@ -172,6 +172,6 @@ $(document).ready(function(){
 $(document).ready(function() {
   $('#firstTable').dataTable( {
     "pageLength": 50
-  } );
+  });
   $('.content').richText();
 });

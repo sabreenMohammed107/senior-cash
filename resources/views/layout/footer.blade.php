@@ -43,7 +43,12 @@
   <script>
 // delete alert
 
-
+$(document).ready(function() {
+  $('#firstTable').dataTable( {
+    "pageLength": 50
+  });
+  
+});
  function destroy(thing, id) {
   Swal.fire({
   title: 'Are you sure?',
