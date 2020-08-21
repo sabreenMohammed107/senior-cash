@@ -74,7 +74,7 @@
                             </div>
                             <div class="input-group d-flex justify-content-end text-center">
                             <a href="{{ route('cash-box.index') }}" class="btn btn-dark mx-2"> Cancel</a>
-                                <input disabled type="submit" value="Add" class="btn btn-success ">
+                                <input  type="submit" value="Add" class="btn btn-success ">
                             </div>
                         </form>
                     </div>
