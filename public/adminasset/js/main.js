@@ -170,9 +170,8 @@ $(document).ready(function(){
 // ****************************end uplaod file**************************/
 /*rich text*/
 $(document).ready(function() {
-  var table = $('#firstTable').DataTable({
-    pageLength : 40,
-    lengthMenu: [[5, 10, 20, -1], [5, 10, 20, 'Todos']]
-  })
+  $('#firstTable').dataTable( {
+    "pageLength": 50
+  } );
   $('.content').richText();
 });
