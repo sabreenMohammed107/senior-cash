@@ -21,7 +21,7 @@
             </div>
             <div class="ms-panel-body">
                 <div class="table-responsive">
-                    <table id="courseEval" class="dattable table table-striped thead-dark  w-100">
+                    <table id="firstTable" class="dattable table table-striped thead-dark  w-100">
                         <thead>
                             <tr>
                                 <th>#</th>
