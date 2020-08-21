@@ -45,7 +45,8 @@
 
 $(document).ready(function() {
   $('#firstTable').dataTable( {
-    "pageLength": 50
+    destroy: true,
+    pageLength: 50
   });
   
 });
